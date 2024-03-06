@@ -15,7 +15,7 @@ Entraîner un réseau de neurones à reconnaître le **nombre de Pokémon** sur 
 ### <span style="color:orange">Génération</span>
 
 La base de données est constituée d'images générées avec un script ayant les réglages suivants :
-- La taille de l'image finale est de **240 x 112**.
+- La taille de l'image finale est de **256 x 192**.
 - Il y a 30 arrière-plans possibles.
 - Il y a 0, 1, 2 et 3 Pokémon sur l'image.
 - Il y a 649 Pokémon possibles, chacun avec un côté avant et arrière (Pokémons de la 5ème génération).
@@ -29,6 +29,6 @@ Les parramètres précis sont disponible dans le fichier **generateur.py**.
 
 ### <span style="color:orange">Constitution</span>
 La base de données suit la répartition suivante :
-- Ensemble d'entraînement : 1000 images générées
-- Ensemble de validation : ??? images générées
+- Ensemble d'entraînement : 4000 images générées
+- Ensemble de validation : 1000 images générées
 - Ensemble de test : ??? images tirées du jeu
