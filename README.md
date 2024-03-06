@@ -1,7 +1,7 @@
 # Projet d'apprentissage profond - Groupe A
 
 ## <span style="color:darkorange">Sujet</span>
-Entraîner un réseau de neurones à reconnaître le **nombre de Pokémon** sur une image. Les classes possibles sont 0, 1, 2 et 3, correspondant au nombre de Pokémon sur l'image.
+Entraîner un réseau de neurones à reconnaître le **nombre de Pokémon** sur une image. Les classes possibles sont 1, 2, 3 et 4, correspondant au nombre de Pokémon sur l'image.
 
 ## <span style="color:darkorange">Membres</span>
 - Samy Afker
@@ -14,15 +14,15 @@ Entraîner un réseau de neurones à reconnaître le **nombre de Pokémon** sur 
 
 ### <span style="color:orange">Génération</span>
 
-La base de données est constituée d'images générées avec un script ayant les réglages suivants :
+Pour les ensembles d'entrainement et de validation les images sont générées avec un script ayant les réglages suivants :
 - La taille de l'image finale est de **256 x 192**.
 - Il y a 30 arrière-plans possibles.
 - Il y a 1, 2, 3 ou 4 Pokémon sur l'image.
 - Il y a 649 Pokémon possibles, chacun avec un côté avant et arrière (Pokémons de la 5ème génération).
 - La taille originale des images de Pokémon est de **96 x 96**.
-- Une modification de taille est appliquée aux Pokémon.
-- Les Pokémon peuvent déborder de l'image.
-- Les Pokémon ont une proximité maximale.
+- Une modification sur la taille des Pokémons est appliqué avec un coefitient aléatoirement choisie  entre 1 et 1,5.
+- Les Pokémon peuvent déborder de l'image d'1/3 de leur taille.
+- Les Pokémon ont une proximité maximale d'1/2 de leur taille.
 - Un flou gaussien est appliqué à l'image.
 
 Les parramètres précis sont disponible dans le fichier **generateur.py**.
