@@ -1,7 +1,7 @@
 # Projet d'apprentissage profond - Groupe A
 
 ## <span style="color:darkorange">Sujet</span>
-Entraîner un réseau de neurones à reconnaître le **nombre de Pokémon** sur une image. Les classes possibles sont 1, 2, 3 et 4, correspondant au nombre de Pokémon sur l'image.
+Entraîner un réseau de neurones à reconnaître le **nombre de Pokémon** sur une image. Les classes possibles sont **1, 2, 3 ou 4**, correspondant au nombre de Pokémon sur l'image.
 
 ## <span style="color:darkorange">Membres</span>
 - Samy Afker
@@ -14,7 +14,7 @@ Entraîner un réseau de neurones à reconnaître le **nombre de Pokémon** sur 
 
 ### <span style="color:orange">Génération</span>
 
-Pour les ensembles d'entrainement et de validation les images sont générées avec un script ayant les réglages suivants :
+>Pour les ensembles d'entrainement et de validation les images sont générées avec un script ayant les réglages suivants :
 - La taille de l'image finale est de **256 x 192**.
 - Il y a 30 arrière-plans possibles.
 - Il y a 1, 2, 3 ou 4 Pokémon sur l'image.
@@ -27,8 +27,10 @@ Pour les ensembles d'entrainement et de validation les images sont générées a
 
 Les parramètres précis sont disponible dans le fichier **generateur.py**.
 
+>Pour l'ensemble de test, les images ont été obtenue directement dans le jeu Pokémon version Noir. Les captures d'écran on été réaliser avec le scripte **auto-screenshot.py** et on été recadrées avec le scripte **rognage.py**.
+
 ### <span style="color:orange">Constitution</span>
 La base de données suit la répartition suivante :
 - Ensemble d'entraînement : 4000 images générées (1000 par classe)
 - Ensemble de validation : 1000 images générées
-- Ensemble de test : ??? images tirées du jeu
+- Ensemble de test : 100 images tirées du jeu

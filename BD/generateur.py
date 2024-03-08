@@ -1,3 +1,9 @@
+"""
+Nom du Script : generateur.py
+Auteur :        Romain Malinge
+Description :   Produit une base de donnée d'image de pokemon selon diver paramettres
+"""
+
 from PIL import Image, ImageFilter
 import random
 import os
@@ -22,7 +28,7 @@ any = (-2*DISTANCE_MIN, -2*DISTANCE_MIN)    # Position eloigné de tout
 def generate_images():
 
     # Supprimer tous les dossiers existants
-    path = 'base_de_donnee'
+    path = 'images_générées'
     if os.path.exists(path):
         shutil.rmtree(path)
     else:
@@ -54,7 +60,7 @@ def generate_images():
             background.paste(pokemon, pos, pokemon)
 
         # Enregistrer l'image avec du flou
-        background = background.filter(ImageFilter.GaussianBlur(FLOU)) 
+        background = background.filter(ImageFilter.GaussianBlur(FLOU))
         background.save(path + '\\' + str(nombre_pokemon) + '\\' + str(i) + '.png')
 
 
