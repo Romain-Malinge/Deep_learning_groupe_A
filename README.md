@@ -14,7 +14,7 @@ Entraîner un réseau de neurones à reconnaître le **nombre de Pokémon** sur 
 
 ### <span style="color:orange">Génération</span>
 
->Pour les ensembles d'entrainement et de validation les images sont générées avec un script ayant les réglages suivants :
+Pour les ensembles d'entrainement et de validation les images sont générées avec un script ayant les réglages suivants :
 - La taille de l'image finale est de **256 x 192**.
 - Il y a 30 arrière-plans possibles.
 - Il y a 1, 2, 3 ou 4 Pokémon sur l'image.
@@ -25,9 +25,9 @@ Entraîner un réseau de neurones à reconnaître le **nombre de Pokémon** sur 
 - Les Pokémon ont une proximité maximale d'1/2 de leur taille.
 - Un flou gaussien est appliqué à l'image.
 
-Les parramètres précis sont disponible dans le fichier **generateur.py**.
+>Les parramètres précis sont disponible dans le fichier **generateur.py**.
 
->Pour l'ensemble de test, les images ont été obtenue directement dans le jeu Pokémon version Noir. Les captures d'écran on été réaliser avec le scripte **auto-screenshot.py** et on été recadrées avec le scripte **rognage.py**.
+Pour l'ensemble de test, les images ont été obtenue directement dans le jeu Pokémon version Noir. Les captures d'écran on été réaliser avec le scripte **auto-screenshot.py** et on été recadrées avec le scripte **rognage.py**.
 
 ### <span style="color:orange">Constitution</span>
 La base de données suit la répartition suivante :
