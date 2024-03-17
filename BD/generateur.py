@@ -10,7 +10,7 @@ import os
 import shutil
 import math
 
-NOMBRE_IMAGE = 5000                         # Nombre d'image à générer
+NOMBRE_IMAGE = 4000                         # Nombre d'image à générer
 NOMBRE_DE_CLASSE = 4                        # Le nombre de pokemon max par image - 1
 NOMBRE_POKEMON_TOTAL = 649                  # Nombre de pokemon possible 
 NOMBRE_BACKGROUND_TOTAL = 30                # Nombre de fond possible
@@ -21,14 +21,13 @@ h = 96                                      # hauteur image pokemon
 DEBORDEMENT = math.floor(h/3)               # Debordement sur les bords de l'image en pixel
 DISTANCE_MIN = math.floor(h/2)              # Distance min entre 2 pokemons
 SCALE_COEF = 1.5                            # Valriation max de la taille
-FLOU = 0.2                                  # La valeur du flou appaorté à l'image
 any = (-2*DISTANCE_MIN, -2*DISTANCE_MIN)    # Position eloigné de tout 
 
 
 def generate_images():
 
     # Supprimer tous les dossiers existants
-    path = 'images_générées'
+    path = 'entrainement'
     if os.path.exists(path):
         shutil.rmtree(path)
     else:
@@ -59,8 +58,7 @@ def generate_images():
             mem.append(centre)
             background.paste(pokemon, pos, pokemon)
 
-        # Enregistrer l'image avec du flou
-        background = background.filter(ImageFilter.GaussianBlur(FLOU))
+        # Enregistrer l'image
         background.save(path + '\\' + str(nombre_pokemon) + '\\' + str(i) + '.png')
 
 

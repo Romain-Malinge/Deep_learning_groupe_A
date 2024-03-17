@@ -23,7 +23,6 @@ Pour les ensembles d'entrainement et de validation les images sont générées a
 - Une modification sur la taille des Pokémons est appliqué avec un coefitient aléatoirement choisie  entre 1 et 1,5.
 - Les Pokémon peuvent déborder de l'image d'1/3 de leur taille.
 - Les Pokémon ont une proximité maximale d'1/2 de leur taille.
-- Un flou gaussien est appliqué à l'image.
 
 >Les parramètres précis sont disponible dans le fichier **generateur.py**.
 
