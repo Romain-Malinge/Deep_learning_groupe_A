@@ -10,8 +10,8 @@ import os
 import shutil
 import math
 
-DIR_NAME = 'validation'                     # Nom du dossier pour les images
-NOMBRE_IMAGE = 1000                         # Nombre d'image à générer
+DIR_NAME = 'classe_2'                       # Nom du dossier pour les images
+NOMBRE_IMAGE = 25000                        # Nombre d'image à générer
 NOMBRE_DE_CLASSE = 4                        # Nombre de pokemon max par image
 NOMBRE_POKEMON_TOTAL = 649                  # Nombre de pokemon possible 
 NOMBRE_BACKGROUND_TOTAL = 30                # Nombre de fond possible
@@ -52,7 +52,7 @@ def generate_images():
             image = image.point(adjust_brightness)
 
         # Ajouter les pokemons
-        nombre_pokemon = random.randint(1, NOMBRE_DE_CLASSE)
+        nombre_pokemon = 2
         mem = []
         for j in range(nombre_pokemon):
 
